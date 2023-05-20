@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSH Password Generator</title>
+    <script src="./crypto-js.min.js"></script>
+    <script src="./main.js"></script>
+		<link rel="stylesheet" href="./app.css">
+  </head>
+  <body>
+		<h2>SSH Password Generator</h2>
+    <form>
+      <fieldset>
+        <legend>1. Enter your serial number</legend>
+        <label>
+          Serial number:
+          <input type="text" id="sn" placeholder="Serial number" />
+        </label>
+        <button id="calc">Compute</button>
+      </fieldset>
+    </form>
+    <fieldset class="result undetermined">
+      <legend>2. Result</legend>
+      <label>
+        Login:
+        <input type="text" disabled value="root" placeholder="Login" />
+      </label>
+      <label>
+        Password:
+        <input type="text" disabled id="passwd" placeholder="Password" />
+      </label>
+    </fieldset>
+  </body>
+</html>
